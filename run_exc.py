@@ -14,16 +14,28 @@ while True:
         exc = import_module(f"{course_modules[module]}.exc")
         print(f"Running exercises from module {module}. To stop, type 'stop'.")
         while True:
-            exercises = list(exc.table.keys())
-            print("Choose exercise to run: ", exercises)
-            action = input("> ")
-            if action == "stop":
-                break
-            else:
-                try:
-                    exc.table[int(action)]()
-                except ValueError:
-                    print("Invalid exercise number")
+            try:
+                chapters = list(exc.table.keys())
+                chapter = input((f"Choose chapter: {chapters}\n> "))
+                if chapter == "stop":
+                    break
+                else:
+                    chapter = int(chapter)
+                if chapter not in exc.table.keys():
+                    raise ValueError
+            except ValueError:
+                print("Invalid chapter")
+                continue
+            try:
+                exercises = list(exc.table[chapter].keys())
+                exercise = input(f"Choose exercise to run: {exercises}\n> ")
+                if exercise == "stop":
+                    break
+                else:
+                    exc.table[chapter][int(exercise)]()
+            except ValueError:
+                print("Invalid exercise number")
+                continue
     except ImportError:
         print(f"No exercises found in module {module}")
         continue
