@@ -1,4 +1,4 @@
-# 2.15
+# Chapter 2
 
 def exc2():
     name = input("Enter your name: ")
@@ -16,4 +16,6 @@ def exc5():
     print(f"Temp in °F: {round(celsius * 1.8 + 32, 5)}")
 
 
-table = {2: exc2, 3: exc3, 5: exc5}
+table = {
+    2: {2: exc2, 3: exc3, 5: exc5}
+}
