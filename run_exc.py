@@ -32,7 +32,11 @@ while True:
                 if exercise == "stop":
                     break
                 else:
-                    exc.table[chapter][int(exercise)]()
+                    try:
+                        exc.table[chapter][int(exercise)]()
+                    except Exception as e:
+                        print(e)
+                        continue
             except ValueError:
                 print("Invalid exercise number")
                 continue
