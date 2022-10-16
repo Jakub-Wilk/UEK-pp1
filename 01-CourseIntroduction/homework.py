@@ -14,8 +14,3 @@ def exc3():
 def exc5():
     celsius = float(input("Enter Temp in °C: "))
     print(f"Temp in °F: {round(celsius * 1.8 + 32, 5)}")
-
-
-table = {
-    2: {2: exc2, 3: exc3, 5: exc5}
-}
