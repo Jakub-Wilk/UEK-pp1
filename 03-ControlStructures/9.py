@@ -1,0 +1,1 @@
+(print(("Neither are positive","At least one is positive")[max((int(x) for x in input("Enter two numbers with a space between them:\n> ").split(" ")))>0]))

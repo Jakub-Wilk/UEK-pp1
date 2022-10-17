@@ -1,0 +1,1 @@
+print(("Within speed limit","Speed limit exceeded")[int(input("Car speed in km/h\n> "))>130])

@@ -1,0 +1,1 @@
+print(sum(range(100,151)))
