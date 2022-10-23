@@ -1,0 +1,1 @@
+(x:=float(input("x = ")),y:=float(input("y = ")),print(f"Point P({x}, {y}) is {'in the first quadrant' if x>0 and y>0 else 'in the second quadrant' if x<0 and y>0 else 'in the third quadrant' if x<0 and y<0 else 'in the fourth quadrant' if x>0 and y<0 else 'in the center' if x==0 and y==0 else 'on the X axis' if y==0 else 'on the Y axis'} of the coordinate system"))

@@ -1,0 +1,1 @@
+(x:=int(input("Enter the amount in PLN:\n> ")), print(f"The amount of PLN {x} in coins:\n5zł - {x//5}\n2zł - {x%5//2}\n1zł - {x%5%2}"))

@@ -1,0 +1,1 @@
+(x:=1,y:=lambda x: (print("BINGO") if not x%3 and not x%5 else print("THREE") if not x%3 else print("FIVE") if not x%5 else print(x),x:=x+1,y(x) if x<=30 else ()),y(x))

@@ -1,0 +1,1 @@
+(x:=int(input(f"Enter the dog's age in human years: ")),print(f"The dog's age in dog's years is {x*10.5 if x<=2 else (x-2)*4+21} years"))

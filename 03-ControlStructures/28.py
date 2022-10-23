@@ -1,0 +1,1 @@
+(x:=0,y:=1,print("0",end=" "),z:=lambda x,y:(print(x+y,end=" "),t:=y,y:=x+y,x:=t,z(x,y) if y<7.8e9 else ()), z(x,y))

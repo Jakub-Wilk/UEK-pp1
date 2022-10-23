@@ -1,0 +1,1 @@
+[print(" ".join([str(x)+(" " if x<3 else "") for x in range(y,y+43,7)])) for y in range(1,8)]

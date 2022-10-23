@@ -1,0 +1,1 @@
+(a:=[int(x) for x in input("Enter the sides with a space between:\n> ").split(" ")],x:=1,y:=lambda x,a:(print(" ".join("*"*a[1])) if x in (1,a[0]) else print(f"*{' ' * (2*a[1] - 3)}*"),x:=x+1,y(x,a) if x<=a[0] else ()),y(x,a))

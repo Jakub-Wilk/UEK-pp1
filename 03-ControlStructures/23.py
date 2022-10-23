@@ -1,0 +1,1 @@
+(x:=1,y:=lambda x:(print(str(x)*x),x:=x+1,y(x) if x<10 else ()),y(x))

@@ -1,0 +1,1 @@
+(x:=1,y:=True,z:=lambda x,y:(print(" ".join("*"*x)),y:=y if x<5 else not y,x:=x+(1 if y else -1),z(x,y) if x>0 else ()),z(x,y))

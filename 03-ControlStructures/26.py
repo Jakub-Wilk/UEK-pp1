@@ -1,0 +1,1 @@
+(x:=0,y:=lambda x:(__import__("sys").exit("Correct!") if int(input("Enter the PIN code: ")) == 805 else print("Incorrect..."),x:=x+1, y(x) if x<3 else ()),y(x))

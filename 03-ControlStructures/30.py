@@ -1,0 +1,1 @@
+(a:=lambda n,x,f:True if n==x and f==1 else False if n==x else a(n,x+1,f+1 if not n%x else f),b:=int(input("How many prime numbers to find?\n> ")),c:=1,d:=0,print("Prime numbers:",end=" "),e:=lambda c, d:((print(c,end=" "),d:=d+1) if a(c, 1, 0) else (),c:=c+1,e(c, d) if d<b else ()),e(c, d))

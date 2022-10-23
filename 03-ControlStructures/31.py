@@ -1,0 +1,1 @@
+print(", ".join([str(__import__("random").randint(5,10)) for _ in range(20)]))
