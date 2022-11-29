@@ -1,0 +1,1 @@
+f = lambda x: "".join([v if c < 2 or c > len(x) - 5 else "*" for c, v in enumerate(x)])

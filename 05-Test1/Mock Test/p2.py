@@ -1,0 +1,1 @@
+f = lambda x: "0" in set(x) and "1" in set(x) and len(set(x)) == 2
